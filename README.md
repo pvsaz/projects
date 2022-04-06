@@ -5,7 +5,7 @@
 Built with Python, Flask, Flask-RESTful, SQLAlchemy
 
 flask - blog posting app with full CRUD capabilities, hooked up to a SQLite DB\
-flask_api - REST API (for video upload data management) hooked up to a SQLite DB
+flask_api - custom REST API (for video upload data management) hooked up to a SQLite DB
 
 # Data Analysis and Visualization
 
