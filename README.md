@@ -2,9 +2,9 @@
 
 # Backend Development
 
-Built with Python, Flask, Flask-RESTful, SQLAlchemy, SQLite
+Built with Python, Flask, Flask-RESTful, SQLAlchemy, SQLite, Heroku
 
-flask - blog posting app with full CRUD capabilities, hooked up to a SQLite DB\
+flask - bulletin board with full CRUD capabilities and account management (backend in Flask and SQLite, frontend in Bootstrap CSS/HTML), deployed to production with Heroku: https://powerful-depths-70889.herokuapp.com \
 flask_api - custom REST API (for video upload data management) hooked up to a SQLite DB
 
 # Data Analysis and Visualization
