@@ -6,7 +6,7 @@
 \
 \
 \
-flaskapp - bulletin board with full CRUD capabilities and account management (backend in Flask and SQLite, frontend in Bootstrap CSS/HTML), deployed to production with Heroku: https://powerful-depths-70889.herokuapp.com \
+flaskapp - bulletin board with full CRUD capabilities and account management (backend in Flask and SQLite, frontend in Bootstrap CSS/HTML, running in production with Heroku): https://powerful-depths-70889.herokuapp.com \
 \
 flask_api - custom REST API (for video upload data management) hooked up to a SQLite DB
 
