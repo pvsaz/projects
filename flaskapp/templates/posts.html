@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+
+{% block body %}
+{% if current_user.is_authenticated %}
+    <hr>
+    <h4>Create new post:</h4>
+    <form action = '/posts' method='POST'>
+	<label for="title">Title:</label>
+		<input class="form-control" type="search" name="title" id='title' placeholder="Enter Title" aria-label="Enter Title">
+        <br>
+	<label for="content">Content:</label>
+		<textarea class="form-control" name='content' id="content" placeholder="Enter Content" aria-label="Enter Content" rows="3"></textarea>
+        <br>
+        <input type='submit' value='Post'>
+    </form>
+    <hr>
+{% endif %}
+{% for post in posts%}
+
+<h4>{{ post.title }}</h4>
+
+<small>By: {{post.email}} at {{post.date_posted}} UTC</small>
+<br><br>
+
+<p style="white-space:pre-wrap">{{ post.content }}</p>
+{% if post.email == current_user.email %}
+<a class="btn btn-danger" href='/posts/delete/{{post.id}}'>Delete</a>
+<a class="btn btn-primary" href='/posts/edit/{{post.id}}'>Edit</a>
+{% endif %}
+<hr>
+{% endfor %}
+{% endblock %}
