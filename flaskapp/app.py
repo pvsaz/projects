@@ -51,7 +51,7 @@ def signup_post():
 		flash('Email address already exists, please login under Your Account.')
 		return redirect(url_for('signup'))
 	if email == "" or password == "":
-		flash('Please enter both a valid email and a password.')
+		flash('Please enter both an email address and a password.')
 		return redirect(url_for('signup'))
 	new_user = User(email=email, password=generate_password_hash(password, method='sha256'))
 	
